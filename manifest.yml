@@ -1,0 +1,28 @@
+modules:
+  jira:adminPage:
+    - key: forge-snake-game
+      resource: main
+      resolver:
+        function: resolver
+      title: Forge Important App
+      icon: resource:appIcon;joystick.ico
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/snake-game/build
+    tunnel:
+      port: 3000
+  - key: appIcon
+    path: static/snake-game/icon
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/088b050b-a05c-4baf-8f7e-11594775eed9
+permissions:
+  content:
+    styles:
+      - 'unsafe-inline'
+    scripts:
+      - 'unsafe-inline'
