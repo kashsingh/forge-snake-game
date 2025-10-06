@@ -20,12 +20,12 @@ This app embeds a playable Snake game directly on a Jira **Admin** page, demonst
 2. **Install UI dependencies**
 
    ```bash
-   cd static/hello-world
+   cd static/snake-game
    npm install
    ```
 
 3. **Modify or enhance the game**  
-   Edit source files in `static/hello-world/src/` to customize gameplay, UI, or styling.
+   Edit source files in `static/snake-game/src/` to customize gameplay, UI, or styling.
 
 4. **Build the UI**
 
